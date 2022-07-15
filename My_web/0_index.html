@@ -7,35 +7,99 @@
         <script src="colors.js"></script>
     </head>
     <body>
-        <h1><a href="0_index.html">JavaScript</a></h1>
-        <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);">
-        <ol>
-            <li>
-                <dt><a href="1_index.html">22/06/29</a></dt>
-                <dd>var, let, const의 차이</dd>
-            </li>
-            <li>
-                <dt><a href="2_index.html">22/07/06</a></dt>
-                <dd>Detached HEAD 상태</dd>
-            </li>
-        </ol>
-        <h2>JavaScript Study에서의 실수와 흥미에 대한 기록</h2>
-        <img src="main.jpg" width="50%">
-        <p>
+        <h1><a href="0_index.html"><div style="text-align:center">JavaScript</div></a></h1>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="#">강의정리</a>
+                    <ul>
+                        <li><a href="#">처음 만난 리액트</a></li>
+                        <li><a href="web1.html">Web1</a></li>
+                        <li><a href="web2.html">Web2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">멘토</a>
+                    <ul>
+                        <li><a href="1_index.html">22/06/29</a></li>
+                        <li><a href="2_index.html">22/07/06</a></li>
+                        <li><a href="3_index.html">22/07/13</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">주간회고</a>
+                    <ul>
+                        <li><a href="1_index.html">22/06/29</a></li>
+                        <li><a href="2_index.html">22/07/06</a></li>
+                        <li><a href="3_index.html">22/07/13</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <style type="text/css">
+            /* 전체영역에서 여백을 없애기(바깥쪽, 안쪽) */
+            * {
+                    margin: 0;
+                    padding: 0;
+                }
+            /* ul li태그에 리스트 스타일을 없앰 */
+                ul li{
+                    list-style: none;
+                }
+            /* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+                a {
+                    text-decoration: none;    /*선으로 텍스트 꾸미기*/
+                    color:#333;
+                }
+            /* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
+            menu박스 가운데정렬, 글자가운데 정렬 */
+
+                #menu {
+                    font:bold 16px "malgun gothic";   /* 글꼴 malgun gothic*/
+                    width: 420px;
+                    height:50px;
+                    background: #ccc;
+                    color:black;
+                    line-height: 50px; 
+                    margin:0 auto;
+                    text-align: center;
+                }
+            
+            /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+                #menu > ul > li {
+                    float:left;
+                    width:140px;
+                    position:relative; /* 옮길 기준점 */
+                }
+
+                #menu > ul > li > ul {
+		        width:130px;
+		        display:none;
+		        position: absolute;
+		        font-size:14px;
+		        background: skyblue;
+	            }
+
+                #menu > ul > li:hover > ul {
+		        display:block;   /* 해당 영역을 볼 수 있게함*/
+	            }
+
+                #menu > ul > li > ul > li:hover {  /* 마우스에 반응하는 메뉴바 - li:hover*/
+		        background: yellow;
+		        transition: ease 1s;
+		        }
+                </style>
+        
+
+
+        <link href="index.css" rel="stylesheet" type="text/css" />
+
+        <h2><div style="text-align:center">JavaScript Study에서의 실수와 흥미에 대한 기록</div></h2>
+        <div style="text-align:center"><img src="main.jpg" width="40%"></div>
+        <p><div style="text-align:center">
             2022-1 여름방학 여러가지 분야를 접해보기 위해 JavaScript Study를 시작했습니다.
             <br>이 페이지는 공부한 내용들을 적용하고, 그 과정 속에서의 실수들과 흥미를 기록하는 페이지 입니다. 
             <br>감사합니다.
-        </p>
-        
-        <ol>
-            <li>
-                <h4>web1</h4>
-                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-            </li>
-            <li>
-                <h4>web2</h4>
-                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/dPRtcRwKo-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-            </li>
-        </ol>
+        </p></div>
+        <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);">
     </body>
 </html>
