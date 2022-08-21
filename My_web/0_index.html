@@ -5,6 +5,7 @@
         <meta chrset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="colors.js"></script>
+        <link href="0_style.css" rel="stylesheet">
     </head>
     <body>
         <h1><a href="0_index.html"><div style="text-align:center">JavaScript</div></a></h1>
@@ -32,64 +33,15 @@
                         <li><a href="3_index.html">22/07/13</a></li>
                     </ul>
                 </li>
+                <li><a href="#">만들기</a>
+                    <ul>
+                        <li><a href="4_1_index.html">디지털 시계</a></li>
+                        <li><a href="4_2_index.html">로또 번호 추첨</a></li>
+                        <li><a href="3_index.html">22/07/13</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
-
-        <style type="text/css">
-            /* 전체영역에서 여백을 없애기(바깥쪽, 안쪽) */
-            * {
-                    margin: 0;
-                    padding: 0;
-                }
-            /* ul li태그에 리스트 스타일을 없앰 */
-                ul li{
-                    list-style: none;
-                }
-            /* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
-                a {
-                    text-decoration: none;    /*선으로 텍스트 꾸미기*/
-                    color:#333;
-                }
-            /* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
-            menu박스 가운데정렬, 글자가운데 정렬 */
-
-                #menu {
-                    font:bold 16px "malgun gothic";   /* 글꼴 malgun gothic*/
-                    width: 420px;
-                    height:50px;
-                    background: #ccc;
-                    color:black;
-                    line-height: 50px; 
-                    margin:0 auto;
-                    text-align: center;
-                }
-            
-            /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
-                #menu > ul > li {
-                    float:left;
-                    width:140px;
-                    position:relative; /* 옮길 기준점 */
-                }
-
-                #menu > ul > li > ul {
-		        width:130px;
-		        display:none;
-		        position: absolute;
-		        font-size:14px;
-		        background: skyblue;
-	            }
-
-                #menu > ul > li:hover > ul {
-		        display:block;   /* 해당 영역을 볼 수 있게함*/
-	            }
-
-                #menu > ul > li > ul > li:hover {  /* 마우스에 반응하는 메뉴바 - li:hover*/
-		        background: yellow;
-		        transition: ease 1s;
-		        }
-                </style>
-        
-
 
         <link href="index.css" rel="stylesheet" type="text/css" />
 

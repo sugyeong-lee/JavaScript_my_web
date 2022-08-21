@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>자바스크립트 텍스트 복사</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>복사하기 구현</h1>
+    <textarea id="text"></textarea><br>
+    <botton id="copy">복사</botton>
+    <script>
+    document.getElementById("copy").onclick = function(){
+        var text = document.getElementById("text");
+        text.select();
+        document.execCommand("copy");
+        alert("copied!")
+    }
+    </script>
+</body>
+</html>

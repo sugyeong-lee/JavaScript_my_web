@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    gap: 20px 20px;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+#clock{
+    border:1px solid #dedede; 
+    width:600px; height:250px; 
+    line-height:250px;
+    color:#666; 
+    font-size:100px; 
+    text-align:center;
+    justify-content:center;
+}
+
+button{
+    font-size: 0.5em;
+    width : 100px;
+    height: 40px;
+    border:none;
+    border-radius: 6px;
+    color:white;
+    background-color:silver;
+    cursor:pointer;
+}
+button:active{
+    font-size:0.6em;
+    width:105px;
+    height:42px;
+}
+.list{
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
