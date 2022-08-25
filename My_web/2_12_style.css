@@ -35,8 +35,8 @@ body{
 }
 
 .clock .hour,
-.clock .min,
-.clock .sec{
+.clock .min
+{
     position: absolute;
 }
 
@@ -50,12 +50,7 @@ body{
     height : 190px;
 }
 
-.clock .sec .sc{
-    width : 230px;
-    height : 230px;
-}
-
-.hr, .mn, .sc{
+.hr, .mn{
     display:flex; 
     justify-content: center; 
     /* position: absolute; */
