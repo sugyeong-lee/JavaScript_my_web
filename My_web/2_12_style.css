@@ -9,7 +9,7 @@ body{
     justify-content: center; 
     align-items: center; 
     min-height:100vh; 
-    background-color: #091921;
+    background-color: white;
 }
 
 .clock{
@@ -18,13 +18,9 @@ body{
     display:flex; 
     justify-content: center; 
     align-items: center; 
-    background: url("C:\Users\653dl\my_web\프로젝트\아날로그 시계\clock.png");
+
     background-size: cover;
     border: 4px solid #091921;
-    box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
-                inset 0 -15px 15px rgba(255,255,255,0.05),
-                0 -5px 15px rgba(0,0,0,0.3),
-                inset 0 15px 15px rgba(0,0,0,0.3);
     border-radius: 50%;
 }
 
@@ -33,7 +29,7 @@ body{
     position: absolute;
     width:15px;
     height:15px;    
-    background:#fff;
+    background:black;
     border-radius: 50%;
     z-index : 10;
 }
@@ -71,7 +67,7 @@ body{
     position: absolute;
     width:8px;
     height:80px;    
-    background:#ff105e;
+    background:yellow;
     z-index : 10;
     border-radius: 6px 6px 0 0;
 }
@@ -81,17 +77,8 @@ body{
     position: absolute;
     width:4px;
     height:90px;    
-    background:#ff105e;
+    background:yellow;
     z-index : 10;
     border-radius: 6px 6px 0 0;
 }
 
-.sc:before{
-    content: '';
-    position: absolute;
-    width:2px;
-    height:150px;    
-    background:#fff;
-    z-index : 10;
-    border-radius: 6px 6px 0 0;
-}
