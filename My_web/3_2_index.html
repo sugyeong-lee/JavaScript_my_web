@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>22/07/06</title>
+        <meta chrset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="colors.js"></script>
+    </head>
+    <body>
+        <h1><a href="0_index.html">JavaScript</a></h1>
+        <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);">
+            
+        </ol>
+        <h2>Detached HEAD</h2>
+            <ol>
+                <li>
+                    <p>
+                        <h3>Detached HEAD란?</h3>
+                        HEAD가 특정 branch가 아닌 특정 commit을 직접 참조하고 있는 상태
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <h3>Detached HEAD를 사용하는 이유는?</h3>
+                        보통 해당 repo에서 기록을 남기지 않고 시뮬레이션을 해보고 싶을 때 detached 상태를 이용
+                        But!!! Git에서 지양하는 상태이므로 test branch를 만들어 사용하는 것이 좋다.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <h3>Detached HEAD에서 벗어나려면?</h3>
+                        이전 commit버전으로 되돌리거나 임시로 새로운 branch를 만들고 지운다.
+                        <br>관련 코드
+                        <br>git branch -f master temp
+                        <br>git checkout master
+                    </p>
+                </li>
+            </ol>
+
+            <img src="3_2_1.png" width="100%">
+            <img src="3_2_2.png" width="100%">
+
+    </body>
+</html>

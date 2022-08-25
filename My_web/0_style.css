@@ -17,7 +17,7 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 
 #menu {
     font:bold 16px "malgun gothic";   /* 글꼴 malgun gothic*/
-    width: 650px;
+    width: 480px;
     height:50px;
     background: #ccc;
     color:black;
@@ -38,7 +38,7 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     display:none;
     position: absolute;
     font-size:14px;
-    background: skyblue;
+    background: grey;
 }
 
 #menu > ul > li:hover > ul {
@@ -46,6 +46,6 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 }
 
 #menu > ul > li > ul > li:hover {  /* 마우스에 반응하는 메뉴바 - li:hover*/
-    background: yellow;
+    background: white;
     transition: ease 1s;
 }

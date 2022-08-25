@@ -1,25 +1,15 @@
-    var context; 
-    var dialImg = new Image(); 
-    var hourImg = new Image(); 
-    var minImg = new Image(); 
+const deg = 6;
+const hr = document.querySelector('#hr');
+const mn = document.querySelector('#mn');
+const sc = document.querySelector('#sc');
 
-    dialImg.src = 
-    hourImg.src = 
-    minImg.src = 
-     
-    function showTime() { 
-        var d = new Date(); 
-        var hour = d.getHours(); 
-        var min = d.getMinutes();
-        rMin = 6*min + 6*(rSec/360); 
-        rHour = 30*hour + 30*(rMin/360); 
-        rSec = rSec*(Math.PI/180); 
-        rMin = rMin*(Math.PI/180); 
-        rHour = rHour*(Math.PI/180); 
-    } 
-     
-    function draw() { 
-    }
+setInterval (()=> {
+    let day = new Date();
+    let hh = day.getHours() * 30;
+    let mm = day.getMinutes() * deg;
+    let ss = day.getSeconds() * deg;
 
-
-    src="http://code.jquery.com/jquery-1.7.2.min.js"
+    hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+    mn.style.transform = `rotateZ(${mm}deg)`;
+    sc.style.transform = `rotateZ(${ss}deg)`;
+})

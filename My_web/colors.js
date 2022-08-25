@@ -1,3 +1,4 @@
+
 var Links = {
     setColor:function(color){
       // var alist = document.querySelectorAll('a');
