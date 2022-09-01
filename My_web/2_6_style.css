@@ -34,3 +34,14 @@ button:active{
     color: lightgray;
     background-color: darkslategray;
 }
+
+#records{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+  }
+  #List{
+    text-align: center;
+  }
